@@ -7,13 +7,13 @@
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous">
-    </script>
+    <script rel="javascript" type="text/javascript" src="assets/js/function.js"></script>
+
   </head>
 
   <body>
     <section class="home">
-      <div class="container">
+      <div class="container menu">
         <ul>
           <a href="#"><li>Hola</li></a>
           <a href="#"><li>Lo esencial</li></a>
@@ -21,7 +21,56 @@
           <a href="#"><li>Platicame</li></a>
         </ul>
       </div>
+      <section class="fanny">
+        <h2>¡Bienvenidos!</h2>
+        <img class="fanny-img" src="assets/img/fanny-img.png">
+        <br>
+        <img class="cintilla" src="assets/img/cinta.png">
+        
+        <p>
+          ¿Alguna vez te has preguntado qué es lo que hace especial a las personas? 
+¿Qué es ese “algo” que se queda grabado en ti para que esa persona 
+siga presente en distintas situaciones de tu vida? 
+        </p>
+        <section class="videos">
+            <video class="video video1" poster="#" autoplay="autoplay" loop="loop">
+              <source src="assets/videos/02/fanny02.mp4" type="video/mp4">
+              <source src="assets/videos/02/fanny02.webm" type="video/webm">
+            </video>
+            <video class="video" poster="#" autoplay="autoplay" loop="loop">
+              <source src="assets/videos/01/fanny01.mp4" type="video/mp4">
+              <source src="assets/videos/01/fanny01.webm" type="video/webm">
+            </video>
+            <video class="video" poster="#" autoplay="autoplay" loop="loop">
+              <source src="assets/videos/02/fanny02.mp4" type="video/mp4">
+              <source src="assets/videos/02/fanny02.webm" type="video/webm">
+            </video>
+          <span class="click-me">Clcik me ↑ </span>
+        </section>
+
+      </section>
 
     </section>
+    <div class="overlay">
+      <div class="modal1">
+            <span class="cerrar">X</span>
+            <img class="cintilla2" src="assets/img/cinta2.png">
+
+            <video class="video-modal" poster="#" autoplay="autoplay" loop="loop">
+              <source src="assets/videos/02/fanny02.mp4" type="video/mp4">
+              <source src="assets/videos/02/fanny02.webm" type="video/webm">
+            </video>  
+            <p>
+              ¡Bienvenido a mi página!, la principal idea de esta sección estaba pensada en que personas como tú que la visitaran, conocieran algo interesante sobre mí, o lo más relevante de mi vida. 
+Considero que compartiéndote mi perspectiva de que es lo esencial en las personas que me rodean, lograrás conocer una gran o pequeña parte de mí.  
+            </p>  
+            <h3 class="cta-cerrar">cerrar</h3>  
+      </div>
+
+      <div class="modal2"></div>
+      <div class="modal3"></div>
+    </div>
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous">
+    </script>      
   </body>
 </html>

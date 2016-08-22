@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'Segoe';
+  src: url('segoe-font.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
 body, h1, h2, h3, h4, h5, li, ul {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe';
 }
 
 a {
@@ -14,19 +22,17 @@ section.home{
  -o-background-size: cover;
  background-size: cover;
  width: 100%;
- height:100vh;
+ height:1000px;
  font-size: 10px;
 }
-.cajaSola {
-  height: 20px;
-}
+
 .container ul li {
   color: white;
   background: rgba(198, 99, 99, 0.5);
   margin-top: 30px;
   text-align: right;
   font-size: 3em;
-  padding: 5px 5px 5px;
+  padding: 5px 15px 5px;
 }
 
 .container ul li:hover {
@@ -35,16 +41,116 @@ section.home{
 
 @keyframes menu {
   0% {
-    padding: 5px 5px 5px;
+    padding: 5px 15px 5px;
   }
   100% {
-    padding: 5px 15px 5px;
+    padding: 5px 25px 5px;
   }
 }
 
-.container ul{
-  width: 250px;
+.menu{
+  width: 20%;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
 }
+
+section.fanny {
+  width: 80%;
+  position: relative;
+  float: right;
+  text-align: center;
+}
+section.fanny h2 {
+  margin: 50px auto 30px auto;
+  width: 450px;
+  color: white;
+  font-size: 4em;
+  background: rgba(198, 99, 99, 0.5);
+}
+section.fanny img.fanny-img {
+  width: 170px;
+}
+section.fanny img.fanny-img {
+  width: 170px;
+}
+
+section.fanny img.cintilla {
+  margin-top: 30px;
+  width: 450px;
+}
+section.fanny p {
+  color: #C66363;
+  font-size: 2.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.video {
+  width: 33.333333333%;
+  float: left;
+  cursor: pointer;
+}
+span.click-me {
+  display: block;
+  margin-left: 30px;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 2em;
+}
+.video-modal {
+  width: 80%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+img.cintilla2  {
+  width: 300px;
+  margin: 10px auto 0px auto;
+}
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+span.cerrar {
+  font-size: 2em;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: black;
+  cursor: pointer;
+}
+.modal1 {
+  text-align: center;
+  background: white;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border: 2px solid #63C67F;
+  height: 500px;
+  overflow-y: scroll;
+  display: none;
+}
+.modal1 p {
+  color: #63C67F;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cta-cerrar {
+  color: white;
+  background: #63C67F;
+  padding: 5px;
+  width: 200px;
+  margin: 0 auto 10px auto;
+  cursor: pointer;
+}
+
