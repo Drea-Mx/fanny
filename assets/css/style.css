@@ -86,9 +86,27 @@ section.fanny p {
   padding-right: 20px;
 }
 .video {
-  width: 33.333333333%;
+  width: 100%;
   float: left;
   cursor: pointer;
+  z-index: 1;
+}
+.videos {
+  position: relative;
+}
+.video-grap {
+  float: left;
+  width: 33.333333333%;
+  position: relative;
+}
+.hover-pink1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #C66363;
+  z-index: 2;
 }
 span.click-me {
   display: block;
@@ -127,7 +145,7 @@ span.cerrar {
   color: black;
   cursor: pointer;
 }
-.modal1 {
+.modal1, .modal2, .modal3 {
   text-align: center;
   background: white;
   width: 50%;
@@ -140,7 +158,7 @@ span.cerrar {
   overflow-y: scroll;
   display: none;
 }
-.modal1 p {
+.modal1, .modal2, .modal3 p {
   color: #63C67F;
   padding-left: 20px;
   padding-right: 20px;
