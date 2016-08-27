@@ -1,13 +1,13 @@
 $(document).ready(function(){
-    $("#video1").click(function(evento){
+    $(".hover-pink1").click(function(evento){
         $('.overlay').css('display', 'flex');
         $('.modal1').css('display', 'block');
     });
-    $("#video2").click(function(evento){
+    $(".hover-pink2").click(function(evento){
         $('.overlay').css('display', 'flex');
         $('.modal2').css('display', 'block');
     });
-    $("#video3").click(function(evento){
+    $(".hover-pink3").click(function(evento){
         $('.overlay').css('display', 'flex');
         $('.modal3').css('display', 'block');
     });
