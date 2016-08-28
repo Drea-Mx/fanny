@@ -60,6 +60,23 @@ section.home{
   transform: translateY(-50%);
 }
 
+.redes {
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 30px auto;
+  position: fixed;
+  text-align: center;
+}
+
+.redes img {
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  width: 50px;
+  display: inline;
+  
+}
+
 section.fanny {
   width: 80%;
   position: relative;
@@ -90,7 +107,22 @@ section.fanny img.fanny-img {
 section.fanny img.cintilla {
   margin-top: 30px;
   max-width: 450px;
+  animation: rotacion 1.5s ease 1s forwards infinite;
 }
+
+@keyframes rotacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+      transform: rotate(-2deg);
+  }
+
+}
+
 section.fanny p {
   color: #C66363;
   font-size: 2.5em;
@@ -302,7 +334,7 @@ span.cerrar {
 }
 form {
   max-width: 600px;
-  margin: 0 auto 50px;
+  margin: 0 auto 150px;
 }
 input, textarea {
   font-family: 'Segoe';
@@ -350,7 +382,7 @@ form [type="submit"] {
 form [type="submit"]:hover {
   background: #63C67F;
   color: white;
-  
+  margin-bottom: 50px;
 }
 
 textarea {
