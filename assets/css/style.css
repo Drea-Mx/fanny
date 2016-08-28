@@ -10,19 +10,21 @@ body, h1, h2, h3, h4, h5, li, ul {
   padding: 0;
   font-family: 'Segoe';
 }
+body {
+
+  background: #C1E9E9 url(../img/bg.png) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
 
 a {
   text-decoration: none;
 }
 
 section.home{
-  background: #000 url(../img/bg.png) no-repeat center center fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
  width: 100%;
- height:1000px;
  font-size: 10px;
 }
 
@@ -33,6 +35,9 @@ section.home{
   text-align: right;
   font-size: 3em;
   padding: 5px 15px 5px;
+}
+.green {
+  background: rgba(148, 216, 167, 0.7) !important;
 }
 
 .container ul li:hover {
@@ -61,23 +66,30 @@ section.fanny {
   float: right;
   text-align: center;
 }
-section.fanny h2 {
+.h2 {
   margin: 50px auto 30px auto;
-  width: 450px;
+  max-width: 370px;
   color: white;
   font-size: 4em;
   background: rgba(198, 99, 99, 0.5);
 }
-section.fanny img.fanny-img {
-  width: 170px;
+.h2-verde {
+  margin: 50px auto 30px auto;
+  max-width: 500px;
+  color: white;
+  font-size: 4em;
+  background: rgba(148, 216, 167, 0.5);
 }
 section.fanny img.fanny-img {
-  width: 170px;
+  max-width: 170px;
+}
+section.fanny img.fanny-img {
+  max-width: 170px;
 }
 
 section.fanny img.cintilla {
   margin-top: 30px;
-  width: 450px;
+  max-width: 450px;
 }
 section.fanny p {
   color: #C66363;
@@ -229,7 +241,7 @@ span.click-me {
   box-sizing: border-box;
 }
 img.cintilla2  {
-  width: 300px;
+  max-width: 300px;
   margin: 10px auto 0px auto;
 }
 .overlay {
@@ -275,8 +287,72 @@ span.cerrar {
   color: white;
   background: #63C67F;
   padding: 5px;
-  width: 200px;
+  max-width: 200px;
   margin: 0 auto 10px auto;
   cursor: pointer;
 }
 
+/* SUEÑOS! */
+.cuadro-sueños {
+  margin: 20px auto;
+  color: white !important;
+  padding: 50px;
+  max-width: 700px;
+  background: rgba(198, 99, 99, 0.5);
+}
+form {
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+input, textarea {
+  font-family: 'Segoe';
+  border: 3px solid #63C67F;
+  width: 100%;
+  padding: 10px;
+}
+input, textarea:focus {
+  outline: none;
+  color: #94D8A7;
+}
+
+.contact-info label {
+  width: 48%;
+  box-sizing: border-box;
+}
+.contact-info label:nth-child(1) {
+  padding-right: 10px;
+  float: left;
+}
+.contact-info label:nth-child(2) {
+  padding-left: 10px;
+  float: right;
+}
+label {
+  font-size: 2em;
+  color: #63C67F;
+  display: block;
+  margin-bottom: 20px;
+}
+
+span {
+  text-align: left;
+  display: block;
+}
+form [type="submit"] {
+  font-size: 2em;
+  float: right;
+  max-width: 200px;
+  cursor: pointer;
+  background: white;
+  color: #63C67F;
+}
+
+form [type="submit"]:hover {
+  background: #63C67F;
+  color: white;
+  
+}
+
+textarea {
+  height: 10em;
+}
