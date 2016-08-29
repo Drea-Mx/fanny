@@ -5,6 +5,46 @@
   font-weight: normal;
 }
 
+@media (max-width: 1024px) {
+  section.home {
+    font-size: 8px !important;
+  }
+}
+@media (max-width: 848px) {
+  section.home {
+    font-size: 6px !important;
+  }
+    form {
+    max-width: 500px !important;
+  }
+}
+@media (max-width: 674px) {
+  .links-responsive {
+    font-size: 3em !important;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block !important;
+  }
+  .menu-responsive {
+    /* display: block !important; */
+  }
+  
+  section.fanny {
+    width: 100% !important;
+  }
+  section.fanny img.cintilla {
+  max-width: 350px !important;
+}
+}
+@media (max-width: 400px) {
+  section.fanny img.cintilla {
+    max-width: 300px !important; 
+  } 
+}
+
 body, h1, h2, h3, h4, h5, li, ul {
   margin: 0;
   padding: 0;
@@ -58,6 +98,66 @@ section.home{
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
+}
+.menu-responsive {
+  display: none;
+  text-align: center;
+  overflow: hidden;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  right: -50%;
+  background: #C66363;
+  z-index: 2;
+  animation: menu 1s ease forwards;
+  }
+  @keyframes menu {
+    0% {
+      right: -50%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+.links-responsive {
+  font-size: 2.5em;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  }
+  .links-responsive li {
+    color: white !important;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+.hamburger {
+  background: white;
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: solid 4px #C66363;
+  border-radius: 10%;
+  z-index: 1;
+  cursor: pointer;
+}
+.lines {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.line {
+  width: 20px;
+  height: 1px;
+  border: solid 1.99px #C66363;
+  margin-bottom: 5px;
+  background: #C66363;
 }
 
 .redes {
@@ -278,7 +378,7 @@ img.cintilla2  {
 }
 .overlay {
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.0);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -288,6 +388,15 @@ img.cintilla2  {
   left: 0;
   z-index: 1;
   display: none;
+  animation: overlay 2s ease forwards;
+}
+@keyframes overlay {
+  0% {
+    background: rgba(0, 0, 0, 0.0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.8);
+  }
 }
 span.cerrar {
   font-size: 2em;
@@ -341,6 +450,7 @@ input, textarea {
   border: 3px solid #63C67F;
   width: 100%;
   padding: 10px;
+  box-sizing: border-box;
 }
 input, textarea:focus {
   outline: none;
