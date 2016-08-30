@@ -501,6 +501,8 @@ span.cerrar {
   cursor: pointer;
 }
 .modal1, .modal2, .modal3 {
+  margin-left: auto !important;
+  margin-right: auto !important;
   text-align: center;
   background: white;
   max-width: 500px;
