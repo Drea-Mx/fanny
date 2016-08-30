@@ -501,8 +501,8 @@ span.cerrar {
   cursor: pointer;
 }
 .modal1, .modal2, .modal3 {
-  margin-left: auto !important;
-  margin-right: auto !important;
+  left: 50%;
+  margin-left: -250px;
   text-align: center;
   background: white;
   max-width: 500px;
@@ -512,6 +512,7 @@ span.cerrar {
   z-index: 100;
   border: 2px solid #63C67F;
   display: none;
+  box-sizing: border-box;
 }
 .modal1, .modal2, .modal3 p {
   color: #63C67F;
