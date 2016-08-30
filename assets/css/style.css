@@ -22,6 +22,13 @@
   .links-responsive {
     font-size: 3em !important;
   }
+  img.cintilla2 {
+    width: 200px !important;
+  }
+  .modal1, .modal2, .modal3 {
+    width: 80% !important;
+  }
+
   .menu {
     display: none;
   }
@@ -31,6 +38,29 @@
   .menu-responsive {
     /* display: block !important; */
   }
+.redes {
+  bottom: 30px;
+  position: absolute !important;
+  right: 30px;
+  text-align: center !important;
+}
+.icons {
+  text-align: center !important;
+}
+.redes img {
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  width: 50px;
+  display: inline;
+  animation: redes 1s ease forwards infinite;
+
+}
+
+
+.redes-g {
+    display: none;
+  }
   
   section.fanny {
     width: 100% !important;
@@ -39,10 +69,13 @@
   max-width: 350px !important;
 }
 }
+
 @media (max-width: 400px) {
   section.fanny img.cintilla {
     max-width: 300px !important; 
   } 
+  img.cintilla2 {
+  }
 }
 
 body, h1, h2, h3, h4, h5, li, ul {
@@ -81,10 +114,10 @@ section.home{
 }
 
 .container ul li:hover {
-  animation: menu .22s linear forwards;
+  animation: links .22s ease forwards;
 }
 
-@keyframes menu {
+@keyframes links {
   0% {
     padding: 5px 15px 5px;
   }
@@ -95,10 +128,23 @@ section.home{
 
 .menu{
   width: 20%;
+  left: -20%;
+  overflow: hidden;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
+  animation: menuan 1s ease forwards;
 }
+
+@keyframes menuan {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 .menu-responsive {
   display: none;
   text-align: center;
@@ -160,21 +206,32 @@ section.home{
   background: #C66363;
 }
 
-.redes {
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 30px auto;
-  position: fixed;
+.redes-g {
+  width: 20%;
+  bottom: 50px !important;
+  float: left !important;
+  position: fixed !important;
+  text-align: center !important;
+}
+.icons {
   text-align: center;
 }
 
-.redes img {
+.redes-g img {
   padding-left: 5px;
   padding-right: 5px;
   box-sizing: border-box;
   width: 50px;
   display: inline;
-  
+  animation: redes 1s ease forwards infinite;
+}
+@keyframes redes {
+  0% {
+    width: 50px;
+  }
+  100% {
+    width: 45px;
+  }
 }
 
 section.fanny {
@@ -184,12 +241,24 @@ section.fanny {
   text-align: center;
 }
 .h2 {
-  margin: 50px auto 30px auto;
+  margin: -100px auto 30px auto;
   max-width: 370px;
   color: white;
   font-size: 4em;
   background: rgba(198, 99, 99, 0.5);
+  overflow: hidden;
+  animation: bien 1.5s ease forwards;
 }
+
+@keyframes bien {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 50px;
+  }
+}
+
 .h2-verde {
   margin: 50px auto 30px auto;
   max-width: 500px;
@@ -198,10 +267,20 @@ section.fanny {
   background: rgba(148, 216, 167, 0.5);
 }
 section.fanny img.fanny-img {
-  max-width: 170px;
+  max-width: 50px;
+  animation: fanny 1.6s ease .1s forwards;
 }
-section.fanny img.fanny-img {
-  max-width: 170px;
+
+@keyframes fanny {
+  0% {
+    max-width: 50px;
+  }
+  60% {
+    max-width: 200px;
+  }
+  100% {
+    max-width: 175px;
+  }
 }
 
 section.fanny img.cintilla {
@@ -224,10 +303,21 @@ section.fanny img.cintilla {
 }
 
 section.fanny p {
+  opacity: 0;
   color: #C66363;
   font-size: 2.5em;
   padding-left: 20px;
   padding-right: 20px;
+  animation: text 3s ease forwards;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .video {
   width: 100%;
