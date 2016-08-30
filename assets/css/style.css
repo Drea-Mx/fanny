@@ -503,13 +503,12 @@ span.cerrar {
 .modal1, .modal2, .modal3 {
   text-align: center;
   background: white;
-  width: 50%;
+  max-width: 500px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 100;
   border: 2px solid #63C67F;
-  height: 500px;
   overflow-y: scroll;
   display: none;
 }
