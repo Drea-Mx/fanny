@@ -133,7 +133,7 @@ section.home{
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  animation: menuan 1s ease forwards;
+  animation: menuan 1s ease 1s forwards;
 }
 
 @keyframes menuan {
@@ -247,14 +247,16 @@ section.fanny {
   font-size: 4em;
   background: rgba(198, 99, 99, 0.5);
   overflow: hidden;
-  animation: bien 1.5s ease forwards;
+  animation: bien 1.5s ease .4s forwards;
 }
 
 @keyframes bien {
   0% {
+    opacity: 0;
     margin-top: -100px;
   }
   100% {
+    opacity: 1;
     margin-top: 50px;
   }
 }
@@ -276,9 +278,11 @@ section.fanny img.fanny-img {
     max-width: 50px;
   }
   60% {
+    opacity: 0.9;
     max-width: 200px;
   }
   100% {
+    opacity: 1;
     max-width: 175px;
   }
 }
