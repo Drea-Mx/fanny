@@ -534,6 +534,7 @@ span.cerrar {
   padding: 50px;
   max-width: 700px;
   background: rgba(198, 99, 99, 0.5);
+  border-bottom: solid 5px white;
 }
 form {
   max-width: 600px;
