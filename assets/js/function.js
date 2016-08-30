@@ -32,6 +32,14 @@ $(document).ready(function(){
         $('.menu-responsive').css('display', 'none');
     });
 
+    $(".hide").click(function(evento){
+        $('.overlay').css('display', 'none');
+        $('.modal1').css('display', 'none');
+        $('.modal2').css('display', 'none');
+        $('.modal3').css('display', 'none');
+        $('.menu-responsive').css('display', 'none');
+    });
+
 
 
 
@@ -48,5 +56,5 @@ $(document).ready(function(){
     }
   });
 
-  
+
 });
